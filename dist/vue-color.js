@@ -1819,7 +1819,7 @@ var _Checkboard2 = _interopRequireDefault(_Checkboard);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var presetColors = ['#D0021B', '#F5A623', '#F8E71C', '#8B572A', '#7ED321', '#417505', '#BD10E0', '#9013FE', '#4A90E2', '#50E3C2', '#B8E986', '#000000', '#4A4A4A', '#9B9B9B', '#FFFFFF', 'rgba(0,0,0,0)'];
+var presetColors = [{ color: '#D0021B', id: '10001' }, { color: '#F5A623', id: '10002' }, { color: '#F8E71C', id: '10003' }, { color: '#8B572A', id: '10004' }, { color: '#7ED321', id: '10005' }, { color: '#417505', id: '10006' }, { color: '#BD10E0', id: '10007' }, { color: '#9013FE', id: '10008' }, { color: '#4A90E2', id: '10009' }, { color: '#50E3C2', id: '10010' }, { color: '#B8E986', id: '10011' }, { color: '#000000', id: '10012' }, { color: '#4A4A4A', id: '10013' }, { color: '#9B9B9B', id: '10014' }, { color: '#FFFFFF', id: '10015' }, { color: 'rgba(0,0,0,0)', id: '10016' }];
 
 exports.default = {
   name: 'Sketch',
@@ -5853,15 +5853,15 @@ var render = function() {
         [
           _vm._l(_vm.presetColors, function(c) {
             return [
-              !_vm.isTransparent(c)
+              !_vm.isTransparent(c.color)
                 ? _c("div", {
                     key: c,
                     staticClass: "vc-sketch-presets-color",
-                    style: { background: c },
-                    attrs: { "aria-label": "Color:" + c },
+                    style: { background: c.color },
+                    attrs: { "aria-label": "Color:" + c.color },
                     on: {
                       click: function($event) {
-                        _vm.handlePreset(c)
+                        _vm.handlePreset(c.color)
                       }
                     }
                   })
@@ -5870,10 +5870,10 @@ var render = function() {
                     {
                       key: c,
                       staticClass: "vc-sketch-presets-color",
-                      attrs: { "aria-label": "Color:" + c },
+                      attrs: { "aria-label": "Color:" + c.color },
                       on: {
                         click: function($event) {
-                          _vm.handlePreset(c)
+                          _vm.handlePreset(c.color)
                         }
                       }
                     },
