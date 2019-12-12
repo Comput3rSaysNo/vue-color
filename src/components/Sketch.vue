@@ -67,22 +67,22 @@ import alpha from './common/Alpha.vue'
 import checkboard from './common/Checkboard.vue'
 
 const presetColors = [
-  {color:'#D0021B', id: 10001}, 
-  {color:'#F5A623', id: 10002}, 
-  {color:'#F8E71C', id: 10003}, 
-  {color:'#8B572A', id: 10004}, 
-  {color:'#7ED321', id: 10005},
-  {color:'#417505', id: 10006}, 
-  {color:'#BD10E0', id: 10007}, 
-  {color:'#9013FE', id: 10008}, 
-  {color:'#4A90E2', id: 10009}, 
-  {color:'#50E3C2', id: 10010},
-  {color:'#B8E986', id: 10011}, 
-  {color:'#000000', id: 10012}, 
-  {color:'#4A4A4A', id: 10013}, 
-  {color:'#9B9B9B', id: 10014}, 
-  {color:'#FFFFFF', id: 10015},
-  {color:'rgba(0,0,0,0)', id: 10016}
+  {color:'#D0021B', id: '10001'}, 
+  {color:'#F5A623', id: '10002'}, 
+  {color:'#F8E71C', id: '10003'}, 
+  {color:'#8B572A', id: '10004'}, 
+  {color:'#7ED321', id: '10005'},
+  {color:'#417505', id: '10006'}, 
+  {color:'#BD10E0', id: '10007'}, 
+  {color:'#9013FE', id: '10008'}, 
+  {color:'#4A90E2', id: '10009'}, 
+  {color:'#50E3C2', id: '10010'},
+  {color:'#B8E986', id: '10011'}, 
+  {color:'#000000', id: '10012'}, 
+  {color:'#4A4A4A', id: '10013'}, 
+  {color:'#9B9B9B', id: '10014'}, 
+  {color:'#FFFFFF', id: '10015'},
+  {color:'rgba(0,0,0,0)', id: '10016'}
 ]
 
 export default {
