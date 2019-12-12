@@ -38,19 +38,19 @@
     <div class="vc-sketch-presets" role="group" aria-label="A color preset, pick one to set as current color">
       <template v-for="c in presetColors">
         <div
-          v-if="!isTransparent(c)"
+          v-if="!isTransparent(c.color)"
           class="vc-sketch-presets-color"
-          :aria-label="'Color:' + c"
+          :aria-label="'Color:' + c.color"
           :key="c"
-          :style="{background: c}"
-          @click="handlePreset(c)">
+          :style="{background: c.color}"
+          @click="handlePreset(c.color)">
         </div>
         <div
           v-else
           :key="c"
-          :aria-label="'Color:' + c"
+          :aria-label="'Color:' + c.color"
           class="vc-sketch-presets-color"
-          @click="handlePreset(c)">
+          @click="handlePreset(c.color)">
           <checkboard />
         </div>
       </template>
