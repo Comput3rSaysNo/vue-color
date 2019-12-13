@@ -5855,7 +5855,7 @@ var render = function() {
             return [
               !_vm.isTransparent(c.color)
                 ? _c("div", {
-                    key: c,
+                    key: c.id,
                     staticClass: "vc-sketch-presets-color",
                     style: { background: c.color },
                     attrs: { "aria-label": "Color:" + c.color },
@@ -5868,7 +5868,7 @@ var render = function() {
                 : _c(
                     "div",
                     {
-                      key: c,
+                      key: c.id,
                       staticClass: "vc-sketch-presets-color",
                       attrs: { "aria-label": "Color:" + c.color },
                       on: {
