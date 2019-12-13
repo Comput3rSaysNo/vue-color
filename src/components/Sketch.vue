@@ -41,13 +41,13 @@
           v-if="!isTransparent(c.color)"
           class="vc-sketch-presets-color"
           :aria-label="'Color:' + c.color"
-          :key="c"
+          :key="c.id"
           :style="{background: c.color}"
           @click="handlePreset(c.color)">
         </div>
         <div
           v-else
-          :key="c"
+          :key="c.id"
           :aria-label="'Color:' + c.color"
           class="vc-sketch-presets-color"
           @click="handlePreset(c.color)">
